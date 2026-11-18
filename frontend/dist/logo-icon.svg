@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="turbanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF6F00" />
+      <stop offset="50%" stop-color="#FF3D00" />
+      <stop offset="100%" stop-color="#D50000" />
+    </linearGradient>
+    <linearGradient id="turbanFoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD54F" />
+      <stop offset="100%" stop-color="#FF8F00" />
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFDFC4" />
+      <stop offset="100%" stop-color="#F1B88B" />
+    </linearGradient>
+    <linearGradient id="bowlGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFA000" />
+      <stop offset="100%" stop-color="#FF6F00" />
+    </linearGradient>
+    <linearGradient id="spoonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ECEFF1" />
+      <stop offset="100%" stop-color="#90A4AE" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <!-- Background Glow Circle -->
+  <circle cx="250" cy="250" r="230" fill="#FFF3E0" stroke="#FFE0B2" stroke-width="6" />
+
+  <!-- Steam floating from bowl -->
+  <path d="M120,240 Q110,210 125,185 T115,145" fill="none" stroke="#FF7043" stroke-width="4" stroke-linecap="round" opacity="0.75" />
+  <path d="M140,230 Q150,200 135,175 T145,135" fill="none" stroke="#FFA726" stroke-width="4" stroke-linecap="round" opacity="0.65" />
+
+  <!-- Chef Body & Coat -->
+  <g id="chef-body">
+    <!-- Torso / Jacket -->
+    <path d="M160,330 C160,330 180,305 250,305 C320,305 340,330 340,330 L370,450 C370,450 250,470 130,450 Z" fill="#FFFFFF" stroke="#CFD8DC" stroke-width="4" filter="url(#shadow)" />
+    
+    <!-- Red Accent Collar Trim -->
+    <path d="M220,310 L250,370 L280,310 Z" fill="#D32F2F" />
+    <circle cx="250" cy="385" r="5" fill="#E65100" />
+    <circle cx="250" cy="410" r="5" fill="#E65100" />
+    <circle cx="250" cy="435" r="5" fill="#E65100" />
+
+    <!-- Traditional Towel / Angavastram draped around neck -->
+    <path d="M185,295 C190,340 185,410 185,445 C185,450 205,450 205,445 C205,400 215,330 220,300 Z" fill="#FFF8E1" stroke="#FFB300" stroke-width="3" />
+    <rect x="185" y="435" width="20" height="4" fill="#D32F2F" />
+    <rect x="185" y="441" width="20" height="3" fill="#2E7D32" />
+
+    <path d="M315,295 C310,340 315,410 315,445 C315,450 295,450 295,445 C295,400 285,330 280,300 Z" fill="#FFF8E1" stroke="#FFB300" stroke-width="3" />
+    <rect x="295" y="435" width="20" height="4" fill="#D32F2F" />
+    <rect x="295" y="441" width="20" height="3" fill="#2E7D32" />
+  </g>
+
+  <!-- Left Arm holding Delicious Food Bowl -->
+  <g id="left-arm">
+    <path d="M170,335 C130,350 110,330 90,320" fill="none" stroke="#FFFFFF" stroke-width="28" stroke-linecap="round" />
+    <!-- Hand -->
+    <circle cx="95" cy="315" r="14" fill="url(#skinGrad)" />
+
+    <!-- Food Bowl -->
+    <path d="M60,300 C60,350 150,350 150,300 Z" fill="url(#bowlGrad)" stroke="#E65100" stroke-width="3" filter="url(#shadow)" />
+    <!-- Food Rim & Steaming Curry -->
+    <ellipse cx="105" cy="300" rx="45" ry="12" fill="#E65100" />
+    <ellipse cx="105" cy="298" rx="40" ry="9" fill="#D84315" />
+    <!-- Rice & Curry Details / Herb Garnishing -->
+    <ellipse cx="100" cy="297" rx="30" ry="6" fill="#FFB74D" />
+    <circle cx="112" cy="296" r="3" fill="#2E7D32" />
+    <circle cx="95" cy="298" r="2.5" fill="#2E7D32" />
+    <circle cx="105" cy="295" r="2" fill="#FFD54F" />
+  </g>
+
+  <!-- Right Arm holding Golden Spoon -->
+  <g id="right-arm">
+    <path d="M330,335 C370,350 390,330 405,310" fill="none" stroke="#FFFFFF" stroke-width="28" stroke-linecap="round" />
+    <!-- Hand -->
+    <circle cx="400" cy="305" r="14" fill="url(#skinGrad)" />
+
+    <!-- Chef Spoon -->
+    <g transform="rotate(-30 410 290)">
+      <rect x="408" y="240" width="8" height="90" rx="4" fill="url(#spoonGrad)" stroke="#78909C" stroke-width="1.5" />
+      <ellipse cx="412" cy="235" rx="14" ry="22" fill="#FFC107" stroke="#FFA000" stroke-width="2" />
+      <ellipse cx="412" cy="235" rx="10" ry="16" fill="#FFE082" />
+    </g>
+  </g>
+
+  <!-- Chef Head & Neck -->
+  <g id="chef-head">
+    <!-- Neck -->
+    <rect x="232" y="270" width="36" height="35" rx="10" fill="url(#skinGrad)" />
+
+    <!-- Ears -->
+    <circle cx="195" cy="245" r="15" fill="url(#skinGrad)" />
+    <circle cx="305" cy="245" r="15" fill="url(#skinGrad)" />
+    <circle cx="195" cy="245" r="8" fill="#F1B88B" />
+    <circle cx="305" cy="245" r="8" fill="#F1B88B" />
+
+    <!-- Face Shape -->
+    <path d="M200,225 C190,285 220,305 250,305 C280,305 310,285 300,225 Z" fill="url(#skinGrad)" stroke="#E0A97E" stroke-width="2" />
+
+    <!-- Eyes (Happy twinkling) -->
+    <path d="M225,232 Q235,223 245,232" fill="none" stroke="#3E2723" stroke-width="4.5" stroke-linecap="round" />
+    <path d="M255,232 Q265,223 275,232" fill="none" stroke="#3E2723" stroke-width="4.5" stroke-linecap="round" />
+
+    <!-- Cute Cheeks -->
+    <ellipse cx="218" cy="246" rx="9" ry="5" fill="#FF8A80" opacity="0.6" />
+    <ellipse cx="282" cy="246" rx="9" ry="5" fill="#FF8A80" opacity="0.6" />
+
+    <!-- Nose -->
+    <ellipse cx="250" cy="242" rx="7" ry="5" fill="#E0A97E" />
+
+    <!-- Friendly Indian Mustache -->
+    <path d="M250,252 C240,246 220,248 210,262 C225,263 240,256 250,259 C260,256 275,263 290,262 C280,248 260,246 250,252 Z" fill="#212121" />
+
+    <!-- Happy Mouth -->
+    <path d="M236,268 Q250,282 264,268" fill="#D32F2F" stroke="#B71C1C" stroke-width="1.5" />
+    <path d="M242,268 Q250,274 258,268" fill="#FFFFFF" />
+
+    <!-- Traditional Indian Pagri / Turban -->
+    <g id="turban" filter="url(#shadow)">
+      <!-- Main Dome / Fold 1 -->
+      <path d="M190,220 C180,140 220,110 250,110 C280,110 320,140 310,220 Z" fill="url(#turbanGrad)" />
+      
+      <!-- Overlapping Royal Swirls / Folds -->
+      <path d="M180,215 C190,165 240,140 295,160 C325,170 325,215 315,225 C290,205 210,200 180,215 Z" fill="url(#turbanFoldGrad)" />
+      <path d="M185,185 C210,135 275,130 310,175 C275,155 215,155 185,185 Z" fill="url(#turbanGrad)" />
+      
+      <!-- Top Kalgi / Brooch with Ruby Gem & Emerald Feathers -->
+      <circle cx="250" cy="130" r="12" fill="#FFD700" stroke="#B78103" stroke-width="2" />
+      <circle cx="250" cy="130" r="7" fill="#D50000" />
+      <!-- Feather plumes -->
+      <path d="M250,120 Q240,85 242,70 Q250,85 250,120" fill="#2E7D32" />
+      <path d="M250,120 Q256,80 262,65 Q256,85 250,120" fill="#00C853" />
+      <path d="M250,120 Q262,90 272,80 Q258,95 250,120" fill="#FFD600" />
+    </g>
+  </g>
+</svg>
